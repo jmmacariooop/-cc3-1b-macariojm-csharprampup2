@@ -74,7 +74,7 @@ namespace CsharpRampUp
             Console.WriteLine("Age of Student 9: " + studentsAge9);
             Console.WriteLine("Age of Student 10: " + studentsAge10);
 
-            double aveAge = (studentsAge1 + studentsAge2 + studentsAge3 + studentsAge4 + studentsAge5 + studentsAge6 + studentsAge7 + studentsAge8 + studentsAge9 + studentsAge10) / 10;
+            int aveAge = (studentsAge1 + studentsAge2 + studentsAge3 + studentsAge4 + studentsAge5 + studentsAge6 + studentsAge7 + studentsAge8 + studentsAge9 + studentsAge10) / 10;
             Console.WriteLine("The average age is: " + aveAge);
 
             // MultiLine Story
@@ -102,6 +102,7 @@ namespace CsharpRampUp
 
             // First Experiment
             Console.WriteLine("================================================");
+            Console.WriteLine(">>FIRST NUMBER PATTERN");
             Console.Write(">>ENTER NUMBER FOR THE FIRST NUMBER PATTERN: ");
             int numPatOne = Convert.ToInt32(Console.ReadLine());
             if (numPatOne <= 0)
@@ -121,6 +122,7 @@ namespace CsharpRampUp
             }
             Console.WriteLine("================================================");
             // Second Experiment
+            Console.WriteLine(">>SECOND NUMBER PATTERN");
             Console.Write(">>ENTER NUMBER FOR THE SECOND NUMBER PATTERN: ");
             int numPatTwo = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("input: " + numPatTwo);
@@ -151,6 +153,7 @@ namespace CsharpRampUp
 
             Console.WriteLine("================================================");
             // Third Experiment
+            Console.WriteLine(">>THIRD NUMBER PATTERN"); 
             Console.Write(">>ENTER NUMBER FOR THE THIRD NUMBER PATTERN: ");
             int numPatThree = Convert.ToInt32(Console.ReadLine());
             if (numPatThree <= 0)
