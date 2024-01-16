@@ -98,7 +98,7 @@ namespace CsharpRampUp
             Console.WriteLine("Laios and the remaining members of his party, Marcille and Chilchuck, set out to rescue her from being digested by the dragon.");
             Console.WriteLine("While venturing, they meet a peculiar cast along the way and managed to make them hop into the team!");
             Console.WriteLine("This party, including " + charNameOne + " the " + dndClassOne + ", " + charNameTwo + " the " + dndClassTwo + ", " + charNameThree + " the " + dndClassThree + ", " + charNameFour + " the " + dndClassFour + " and " + charNameFive + " the " + dndClassFive);
-            Console.WriteLine(",prepares to venture the deep lore of the dungeons and its monster delicacies!");
+            Console.WriteLine("prepares to venture the deep lore of the dungeons and its monster delicacies!");
 
             // First Experiment
             Console.WriteLine("================================================");
