@@ -6,10 +6,12 @@ namespace CsharpRampUp
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("PART 1");
+
             // Unit Converter
             Console.WriteLine("POUNDS TO KILOGRAMS");
             Console.Write(">ENTER VALUE IN POUNDS: ");
-            int userPounds = Convert.ToInt32(Console.ReadLine());
+            double userPounds = Convert.ToDouble(Console.ReadLine()); ;
             Console.WriteLine(">>VALUE IN POUNDS: " + userPounds);
             Console.WriteLine(">>VALUE IN KILOGRAMS: " + 0.453592 * userPounds);
             Console.WriteLine("======================================");
@@ -17,7 +19,7 @@ namespace CsharpRampUp
             //MILES TO KILOMETERS
             Console.WriteLine("MILES TO KILOMETERS");
             Console.Write(">ENTER VALUE IN MILES: ");
-            int userMiles = Convert.ToInt32(Console.ReadLine());
+            double userMiles = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine(">VALUE IN MILES: " + userMiles);
             Console.WriteLine(">>VALUE IN KILOMETERS: " + 1.60934 * userMiles);
             Console.WriteLine("======================================");
@@ -25,7 +27,7 @@ namespace CsharpRampUp
             //FAHRENHEIT TO CELSIUS
             Console.WriteLine("FAHRENHEIT TO CELSIUS");
             Console.Write(">ENTER VALUE IN FAHRENHEIT: ");
-            int userFahr = Convert.ToInt32(Console.ReadLine());
+            double userFahr = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine(">>VALUE IN FAHRENHEIT: " + userFahr);
             Console.WriteLine(">>VALUE IN CELSIUS: " + (userFahr - 32) / 1.8);
             Console.WriteLine("======================================");
@@ -75,6 +77,7 @@ namespace CsharpRampUp
             Console.WriteLine("Age of Student 10: " + studentsAge10);
 
             int aveAge = (studentsAge1 + studentsAge2 + studentsAge3 + studentsAge4 + studentsAge5 + studentsAge6 + studentsAge7 + studentsAge8 + studentsAge9 + studentsAge10) / 10;
+            Console.WriteLine("======================================");
             Console.WriteLine("The average age is: " + aveAge);
 
             // MultiLine Story
@@ -100,6 +103,8 @@ namespace CsharpRampUp
             Console.WriteLine("This party, including " + charNameOne + " the " + dndClassOne + ", " + charNameTwo + " the " + dndClassTwo + ", " + charNameThree + " the " + dndClassThree + ", " + charNameFour + " the " + dndClassFour + " and " + charNameFive + " the " + dndClassFive);
             Console.WriteLine("prepares to venture the deep lore of the dungeons and its monster delicacies!");
 
+            Console.WriteLine(" ");
+            Console.WriteLine("PART 2");
             // First Experiment
             Console.WriteLine("================================================");
             Console.WriteLine(">>FIRST NUMBER PATTERN");
