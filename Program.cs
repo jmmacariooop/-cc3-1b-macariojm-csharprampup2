@@ -67,7 +67,7 @@ namespace CsharpRampUp
 
                 if (int.TryParse(input, out studentsAge1) && studentsAge1 > 0)
                 {
-                    break; // Break the loop if a valid age is provided
+                    break; 
                 }
                 else
                 {
@@ -83,7 +83,7 @@ namespace CsharpRampUp
 
                 if (int.TryParse(input, out studentsAge2) && studentsAge2 > 0)
                 {
-                    break; // Break the loop if a valid age is provided
+                    break; 
                 }
                 else
                 {
@@ -99,7 +99,7 @@ namespace CsharpRampUp
 
                 if (int.TryParse(input, out studentsAge3) && studentsAge3 > 0)
                 {
-                    break; // Break the loop if a valid age is provided
+                    break; 
                 }
                 else
                 {
@@ -115,7 +115,7 @@ namespace CsharpRampUp
 
                 if (int.TryParse(input, out studentsAge4) && studentsAge4 > 0)
                 {
-                    break; // Break the loop if a valid age is provided
+                    break; 
                 }
                 else
                 {
@@ -131,7 +131,7 @@ namespace CsharpRampUp
 
                 if (int.TryParse(input, out studentsAge5) && studentsAge5 > 0)
                 {
-                    break; // Break the loop if a valid age is provided
+                    break; 
                 }
                 else
                 {
@@ -147,7 +147,7 @@ namespace CsharpRampUp
 
                 if (int.TryParse(input, out studentsAge6) && studentsAge6 > 0)
                 {
-                    break; // Break the loop if a valid age is provided
+                    break; 
                 }
                 else
                 {
@@ -163,7 +163,7 @@ namespace CsharpRampUp
 
                 if (int.TryParse(input, out studentsAge7) && studentsAge7 > 0)
                 {
-                    break; // Break the loop if a valid age is provided
+                    break; 
                 }
                 else
                 {
@@ -179,7 +179,7 @@ namespace CsharpRampUp
 
                 if (int.TryParse(input, out studentsAge8) && studentsAge8 > 0)
                 {
-                    break; // Break the loop if a valid age is provided
+                    break; 
                 }
                 else
                 {
@@ -195,7 +195,7 @@ namespace CsharpRampUp
 
                 if (int.TryParse(input, out studentsAge9) && studentsAge9 > 0)
                 {
-                    break; // Break the loop if a valid age is provided
+                    break; 
                 }
                 else
                 {
@@ -211,7 +211,7 @@ namespace CsharpRampUp
 
                 if (int.TryParse(input, out studentsAge10) && studentsAge10 >0)
                 {
-                    break; // Break the loop if a valid age is provided
+                    break; 
                 }
                 else
                 {
@@ -219,19 +219,15 @@ namespace CsharpRampUp
                 }
             }
 
-
             //Printing Ages of Students
             Console.WriteLine("======================================");
-            Console.WriteLine("Age of Student 1: " + studentsAge1);
-            Console.WriteLine("Age of Student 2: " + studentsAge2);
-            Console.WriteLine("Age of Student 3: " + studentsAge3);
-            Console.WriteLine("Age of Student 4: " + studentsAge4);
-            Console.WriteLine("Age of Student 5: " + studentsAge5);
-            Console.WriteLine("Age of Student 6: " + studentsAge6);
-            Console.WriteLine("Age of Student 7: " + studentsAge7);
-            Console.WriteLine("Age of Student 8: " + studentsAge8);
-            Console.WriteLine("Age of Student 9: " + studentsAge9);
-            Console.WriteLine("Age of Student 10: " + studentsAge10);
+            int[] studentAges = { studentsAge1, studentsAge2, studentsAge3, studentsAge4, studentsAge5, studentsAge6, studentsAge7, studentsAge8, studentsAge9, studentsAge10 };
+
+            for (int i = 0; i < studentAges.Length; i++)
+            {
+                Console.WriteLine($"Age of Student {i + 1}: {studentAges[i]}");
+            }
+
 
             int aveAge = (studentsAge1 + studentsAge2 + studentsAge3 + studentsAge4 + studentsAge5 + studentsAge6 + studentsAge7 + studentsAge8 + studentsAge9 + studentsAge10) / 10;
             Console.WriteLine("======================================");
