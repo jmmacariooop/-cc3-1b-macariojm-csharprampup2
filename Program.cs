@@ -10,21 +10,47 @@ namespace CsharpRampUp
 
             // Unit Converter
             Console.WriteLine("POUNDS TO KILOGRAMS");
-            Console.Write(">ENTER VALUE IN POUNDS: ");
-            double userPounds = Convert.ToDouble(Console.ReadLine()); ;
+
+            double userPounds;
+
+            do
+            {
+                Console.Write(">ENTER VALUE IN POUNDS: ");
+                userPounds = Convert.ToDouble(Console.ReadLine());
+
+                if (userPounds <= 0)
+                {
+                    Console.WriteLine("Please enter a valid value.");
+                }
+
+            } while (userPounds <= 0);
+
             Console.WriteLine(">>VALUE IN POUNDS: " + userPounds);
             Console.WriteLine(">>VALUE IN KILOGRAMS: " + 0.453592 * userPounds);
             Console.WriteLine("======================================");
 
+
             //MILES TO KILOMETERS
             Console.WriteLine("MILES TO KILOMETERS");
-            Console.Write(">ENTER VALUE IN MILES: ");
-            double userMiles = Convert.ToDouble(Console.ReadLine());
+
+            double userMiles;
+
+            do
+            {
+                Console.Write(">ENTER VALUE IN MILES: ");
+                userMiles = Convert.ToDouble(Console.ReadLine());
+
+                if (userMiles <= 0)
+                {
+                    Console.WriteLine("Please enter a valid value.");
+                }
+
+            } while (userMiles <= 0);
             Console.WriteLine(">VALUE IN MILES: " + userMiles);
             Console.WriteLine(">>VALUE IN KILOMETERS: " + 1.60934 * userMiles);
             Console.WriteLine("======================================");
 
-            //FAHRENHEIT TO CELSIUS
+            //FAHRENHEIT TO CELSIUS * A negative value is acceptable.
             Console.WriteLine("FAHRENHEIT TO CELSIUS");
             Console.Write(">ENTER VALUE IN FAHRENHEIT: ");
             double userFahr = Convert.ToDouble(Console.ReadLine());
@@ -33,35 +59,166 @@ namespace CsharpRampUp
             Console.WriteLine("======================================");
 
             // Student Age
-            Console.Write("ENTER AGE OF STUDENT 1:");
-            int studentsAge1 = Convert.ToInt32(Console.ReadLine());
+            int studentsAge1;
+            while (true)
+            {
+                Console.Write("ENTER AGE OF STUDENT 1:");
+                string input = Console.ReadLine();
 
-            Console.Write("ENTER AGE OF STUDENT 2:");
-            int studentsAge2 = Convert.ToInt32(Console.ReadLine());
+                if (int.TryParse(input, out studentsAge1) && studentsAge1 > 0)
+                {
+                    break; // Break the loop if a valid age is provided
+                }
+                else
+                {
+                    Console.WriteLine("Please enter a valid age.");
+                }
+            }
 
-            Console.Write("ENTER AGE OF STUDENT 3:");
-            int studentsAge3 = Convert.ToInt32(Console.ReadLine());
+            int studentsAge2;
+            while (true)
+            {
+                Console.Write("ENTER AGE OF STUDENT 2:");
+                string input = Console.ReadLine();
 
-            Console.Write("ENTER AGE OF STUDENT 4:");
-            int studentsAge4 = Convert.ToInt32(Console.ReadLine());
+                if (int.TryParse(input, out studentsAge2) && studentsAge2 > 0)
+                {
+                    break; // Break the loop if a valid age is provided
+                }
+                else
+                {
+                    Console.WriteLine("Please enter a valid age.");
+                }
+            }
 
-            Console.Write("ENTER AGE OF STUDENT 5:");
-            int studentsAge5 = Convert.ToInt32(Console.ReadLine());
+            int studentsAge3;
+            while (true)
+            {
+                Console.Write("ENTER AGE OF STUDENT 3:");
+                string input = Console.ReadLine();
 
-            Console.Write("ENTER AGE OF STUDENT 6:");
-            int studentsAge6 = Convert.ToInt32(Console.ReadLine());
+                if (int.TryParse(input, out studentsAge3) && studentsAge3 > 0)
+                {
+                    break; // Break the loop if a valid age is provided
+                }
+                else
+                {
+                    Console.WriteLine("Please enter a valid age.");
+                }
+            }
 
-            Console.Write("ENTER AGE OF STUDENT 7:");
-            int studentsAge7 = Convert.ToInt32(Console.ReadLine());
+            int studentsAge4;
+            while (true)
+            {
+                Console.Write("ENTER AGE OF STUDENT 4:");
+                string input = Console.ReadLine();
 
-            Console.Write("ENTER AGE OF STUDENT 8:");
-            int studentsAge8 = Convert.ToInt32(Console.ReadLine());
+                if (int.TryParse(input, out studentsAge4) && studentsAge4 > 0)
+                {
+                    break; // Break the loop if a valid age is provided
+                }
+                else
+                {
+                    Console.WriteLine("Please enter a valid age.");
+                }
+            }
 
-            Console.Write("ENTER AGE OF STUDENT 9:");
-            int studentsAge9 = Convert.ToInt32(Console.ReadLine());
+            int studentsAge5;
+            while (true)
+            {
+                Console.Write("ENTER AGE OF STUDENT 5:");
+                string input = Console.ReadLine();
 
-            Console.Write("ENTER AGE OF STUDENT 10:");
-            int studentsAge10 = Convert.ToInt32(Console.ReadLine());
+                if (int.TryParse(input, out studentsAge5) && studentsAge5 > 0)
+                {
+                    break; // Break the loop if a valid age is provided
+                }
+                else
+                {
+                    Console.WriteLine("Please enter a valid age.");
+                }
+            }
+
+            int studentsAge6;
+            while (true)
+            {
+                Console.Write("ENTER AGE OF STUDENT 6:");
+                string input = Console.ReadLine();
+
+                if (int.TryParse(input, out studentsAge6) && studentsAge6 > 0)
+                {
+                    break; // Break the loop if a valid age is provided
+                }
+                else
+                {
+                    Console.WriteLine("Please enter a valid age.");
+                }
+            }
+
+            int studentsAge7;
+            while (true)
+            {
+                Console.Write("ENTER AGE OF STUDENT 7:");
+                string input = Console.ReadLine();
+
+                if (int.TryParse(input, out studentsAge7) && studentsAge7 > 0)
+                {
+                    break; // Break the loop if a valid age is provided
+                }
+                else
+                {
+                    Console.WriteLine("Please enter a valid age.");
+                }
+            }
+
+            int studentsAge8;
+            while (true)
+            {
+                Console.Write("ENTER AGE OF STUDENT 8:");
+                string input = Console.ReadLine();
+
+                if (int.TryParse(input, out studentsAge8) && studentsAge8 > 0)
+                {
+                    break; // Break the loop if a valid age is provided
+                }
+                else
+                {
+                    Console.WriteLine("Please enter a valid age.");
+                }
+            }
+
+            int studentsAge9;
+            while (true)
+            {
+                Console.Write("ENTER AGE OF STUDENT 9:");
+                string input = Console.ReadLine();
+
+                if (int.TryParse(input, out studentsAge9) && studentsAge9 > 0)
+                {
+                    break; // Break the loop if a valid age is provided
+                }
+                else
+                {
+                    Console.WriteLine("Please enter a valid age.");
+                }
+            }
+
+            int studentsAge10;
+            while (true)
+            {
+                Console.Write("ENTER AGE OF STUDENT 10: ");
+                string input = Console.ReadLine();
+
+                if (int.TryParse(input, out studentsAge10) && studentsAge10 >0)
+                {
+                    break; // Break the loop if a valid age is provided
+                }
+                else
+                {
+                    Console.WriteLine("Please enter a valid age.");
+                }
+            }
+
 
             //Printing Ages of Students
             Console.WriteLine("======================================");
@@ -105,6 +262,7 @@ namespace CsharpRampUp
 
             Console.WriteLine(" ");
             Console.WriteLine("PART 2");
+
             // First Experiment
             Console.WriteLine("================================================");
             Console.WriteLine(">>FIRST NUMBER PATTERN");
@@ -167,9 +325,13 @@ namespace CsharpRampUp
             }
             else
             {
-                for (int i = numPatThree; i > 0; i--)
+                for (int i = numPatThree; i >= 1; i--)
                 {
-                    Console.WriteLine(string.Join(" ", Enumerable.Range(1, i)));
+                    for (int j = 1; j <= i; j++)
+                    {
+                        Console.Write(j + " ");
+                    }
+                    Console.WriteLine();
                 }
             }
         }
